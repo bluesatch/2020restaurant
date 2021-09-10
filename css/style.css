@@ -28,6 +28,24 @@ body {
     scroll-behavior: smooth;
 }
 
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+
 a {
     transition: color 0.5s ease;
 }
@@ -43,13 +61,17 @@ a:hover {
 }
 
 .social ul {
-    justify-content: flex-end;
+    text-align: right;
 }
 
 @media (max-width: 767px) {
     .social ul {
-        justify-content: center;
+        text-align: center;
     }
+}
+
+.social-link { 
+    color: var(--primary);
 }
 
 .inner2 {
@@ -72,13 +94,16 @@ a:hover {
 
 .main-nav {
     margin-top: 20px;
+    text-align: right;
 }
 
 .main-nav li {
+    padding: 6px 8px;
     text-transform: uppercase;
     font-family: var(--workSans);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
+
 }
 
 .main-nav a {
@@ -110,7 +135,7 @@ a:hover {
     margin: 0;
     width: 45%;
     font-family: var(--workSans);
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-style: italic;
     font-weight: 100;
     color: var(--subHeader);
@@ -189,11 +214,11 @@ input[type=search] {
 .promo-text {
     font-family: var(--workSans);
     font-style: italic;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 12px; 
 }
 
-.hero {
+.hero-section {
     background: url(../media/heroBg.jpg);
     background-size: cover;
     opacity: 0.80;
@@ -274,9 +299,15 @@ figcaption p {
     width: 65%;
 }
 
+
 .offerheader {
     font-size: 10px;
     text-transform: capitalize;
+    color: var(--icons);
+}
+
+.offer-icon {
+    font-size: 28px;
     color: var(--icons);
 }
 
